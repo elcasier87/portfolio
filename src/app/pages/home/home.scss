@@ -1,7 +1,7 @@
 main {
 
     width: min(1100px, 90%);
-    margin: auto;
+    margin: 0 auto;
 
 }
 
@@ -13,27 +13,112 @@ section {
     flex-direction: column;
     justify-content: center;
 
+    padding: 4rem 0;
+
+}
+
+.hero-intro {
+
+    color: #3b82f6;
+
+    font-weight: 600;
+
+    font-size: 1rem;
+
+    letter-spacing: .08rem;
+
+    text-transform: uppercase;
+
 }
 
 h1 {
 
-    font-size: 4rem;
-    margin: 0;
+    font-size: clamp(4rem, 9vw, 6rem);
 
-}
+    font-weight: 800;
 
-h2 {
+    line-height: 1;
 
     margin-top: 1rem;
 
 }
 
+h2 {
+
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+
+    margin-top: 1.5rem;
+
+    color: #94a3b8;
+
+    font-weight: 400;
+
+}
+
+.hero-description {
+
+    max-width: 550px;
+
+    margin-top: 2.5rem;
+
+    color: #cbd5e1;
+
+    font-size: 1.15rem;
+
+    line-height: 1.9;
+
+}
+
+.hero-buttons {
+
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+
+}
+
 button {
 
-    width: fit-content;
+    border: none;
+
+    border-radius: 10px;
 
     padding: 1rem 2rem;
 
-    margin-top: 2rem;
+    font-size: 1rem;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+}
+
+button:first-child{
+
+    background:#3b82f6;
+
+    color:white;
+
+}
+
+button:first-child:hover{
+
+    background:#2563eb;
+
+}
+
+button:last-child{
+
+    background:transparent;
+
+    color:white;
+
+    border:1px solid #334155;
+
+}
+
+button:last-child:hover{
+
+    background:#1e293b;
 
 }
