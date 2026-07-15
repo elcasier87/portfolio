@@ -1,7 +1,8 @@
 main {
 
     width: min(1100px, 90%);
-    margin: 0 auto;
+    margin: auto;
+    padding-top:80px;
 
 }
 
@@ -69,6 +70,13 @@ h2 {
 
 }
 
+.hero-tech {
+    margin-top: .75rem;
+    color: #3b82f6;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
 .hero-buttons {
 
     display: flex;
@@ -120,5 +128,75 @@ button:last-child{
 button:last-child:hover{
 
     background:#1e293b;
+
+}
+
+header {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    backdrop-filter: blur(12px);
+
+    background: rgba(15, 23, 42, .75);
+
+    border-bottom: 1px solid rgba(255,255,255,.06);
+
+    z-index: 1000;
+
+}
+
+nav{
+
+    width:min(1100px,90%);
+
+    height:80px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.logo{
+
+    font-size:1.2rem;
+
+    font-weight:700;
+
+}
+
+ul{
+
+    list-style:none;
+
+    display:flex;
+
+    gap:2rem;
+
+}
+
+a{
+
+    color:#cbd5e1;
+
+    text-decoration:none;
+
+    transition:.25s;
+
+}
+
+a:hover{
+
+    color:white;
 
 }
