@@ -1,31 +1,19 @@
-section {
+main{
 
-  padding: 4rem;
+    width:min(1100px,90%);
 
-}
-
-h1{
-
-  font-size:3rem;
+    margin:auto;
 
 }
 
-h2{
+.hero{
 
-  margin-top:1rem;
+    min-height:80vh;
 
-}
+    display:flex;
 
-p{
+    flex-direction:column;
 
-  margin:2rem 0;
-
-  max-width:700px;
-
-}
-
-button{
-
-  padding:1rem 2rem;
+    justify-content:center;
 
 }
