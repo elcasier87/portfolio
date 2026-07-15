@@ -1,19 +1,39 @@
-main{
+main {
 
-    width:min(1100px,90%);
-
-    margin:auto;
+    width: min(1100px, 90%);
+    margin: auto;
 
 }
 
-.hero{
+section {
 
-    min-height:80vh;
+    min-height: 100vh;
 
-    display:flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    flex-direction:column;
+}
 
-    justify-content:center;
+h1 {
+
+    font-size: 4rem;
+    margin: 0;
+
+}
+
+h2 {
+
+    margin-top: 1rem;
+
+}
+
+button {
+
+    width: fit-content;
+
+    padding: 1rem 2rem;
+
+    margin-top: 2rem;
 
 }
