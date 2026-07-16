@@ -432,3 +432,155 @@ a:hover{
     line-height:1.8;
 
 }
+
+.contact-title{
+
+    font-size:clamp(2.5rem,5vw,4rem);
+
+    margin-top:1rem;
+
+}
+
+.contact-description{
+
+    max-width:700px;
+
+    margin-top:1.5rem;
+
+    color:#94a3b8;
+
+    line-height:1.8;
+
+}
+
+.contact-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:1.5rem;
+
+    margin-top:3rem;
+
+}
+
+.contact-button{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-width:190px;
+
+    padding:1rem 2rem;
+
+    border-radius:14px;
+
+    background:#1e293b;
+
+    border:1px solid #334155;
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.contact-button:hover{
+
+    border-color:#3b82f6;
+
+    transform:translateY(-4px);
+
+}
+
+.hero-buttons {
+
+  display: flex;
+  gap: 1rem;
+  margin-top: 2.5rem;
+
+}
+
+.primary-button {
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem 2rem;
+
+  background: #3b82f6;
+
+  color: white;
+
+  border-radius: 12px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: .3s;
+
+}
+
+.primary-button:hover {
+
+  background: #2563eb;
+
+  transform: translateY(-3px);
+
+}
+
+.secondary-button {
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem 2rem;
+
+  border: 1px solid #334155;
+
+  border-radius: 12px;
+
+  color: white;
+
+  text-decoration: none;
+
+  transition: .3s;
+
+}
+
+.secondary-button:hover {
+
+  border-color: #3b82f6;
+
+  transform: translateY(-3px);
+
+}
+
+footer{
+
+    margin-top:8rem;
+
+    padding:3rem 0;
+
+    border-top:1px solid #334155;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    color:#94a3b8;
+
+    font-size:.95rem;
+
+}

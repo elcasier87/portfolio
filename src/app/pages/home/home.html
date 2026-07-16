@@ -55,13 +55,23 @@
 
     <div class="hero-buttons">
 
-      <button>
-        Ver proyecto
-      </button>
+      <a
+        class="primary-button"
+        href="#featured-project">
 
-      <button>
+        Ver proyecto
+
+      </a>
+
+      <a
+        class="secondary-button"
+        href="https://github.com/elcasier87"
+        target="_blank"
+        rel="noopener">
+
         GitHub
-      </button>
+
+      </a>
 
     </div>
 
@@ -181,41 +191,25 @@
 
     <div class="skills-grid">
 
-      <article class="skill-card">
-        <div class="skill-icon">☕</div>
-        <h3>Java</h3>
-        <p>Backend orientado a objetos y lógica de negocio.</p>
-      </article>
+      @for (skill of skills; track skill.title) {
 
-      <article class="skill-card">
-        <div class="skill-icon">🍃</div>
-        <h3>Spring Boot</h3>
-        <p>APIs REST, arquitectura y seguridad.</p>
-      </article>
+        <article class="skill-card">
 
-      <article class="skill-card">
-        <div class="skill-icon">🅰️</div>
-        <h3>Angular</h3>
-        <p>Interfaces SPA modernas y responsive.</p>
-      </article>
+          <div class="skill-icon">
+            {{ skill.icon }}
+          </div>
 
-      <article class="skill-card">
-        <div class="skill-icon">🐳</div>
-        <h3>Anthropic Claude</h3>
-        <p>Integración de IA generativa para identificación y valoración de items.</p>
-      </article>
+          <h3>
+            {{ skill.title }}
+          </h3>
 
-      <article class="skill-card">
-        <div class="skill-icon">🛢️</div>
-        <h3>MySQL</h3>
-        <p>Diseño y gestión de bases de datos relacionales.</p>
-      </article>
+          <p>
+            {{ skill.description }}
+          </p>
 
-      <article class="skill-card">
-        <div class="skill-icon">🌿</div>
-        <h3>Git & GitHub</h3>
-        <p>Control de versiones y trabajo colaborativo.</p>
-      </article>
+        </article>
+
+      }
 
     </div>
 
@@ -223,12 +217,71 @@
 
   <section id="contact">
 
-    <h2>Contacto</h2>
-
-    <p>
-      ¿Hablamos?
+    <p class="section-title">
+      CONTACTO
     </p>
 
+    <h2 class="contact-title">
+      ¿Hablamos?
+    </h2>
+
+    <p class="contact-description">
+      Si buscas un desarrollador backend junior con ganas de seguir aprendiendo y construir productos de calidad, estaré encantado de hablar contigo.
+    </p>
+
+    <div class="contact-buttons">
+
+      <a
+        class="contact-button"
+        href="https://github.com/elcasier87"
+        target="_blank"
+        rel="noopener">
+
+        GitHub
+
+      </a>
+
+      <a
+        class="contact-button"
+        href="https://www.linkedin.com/in/casarohen/"
+        target="_blank"
+        rel="noopener">
+
+        LinkedIn
+
+      </a>
+
+      <a
+        class="contact-button"
+        href="mailto:TU_EMAIL">
+
+        Email
+
+      </a>
+
+      <a
+        class="contact-button"
+        href="assets/CV_Casimiro_Aroca.pdf"
+        download>
+
+        Descargar CV
+
+      </a>
+
+    </div>
+
   </section>
+
+  <footer>
+
+    <p>
+      © 2026 Casimiro Aroca
+    </p>
+
+    <p>
+      Desarrollado con Angular 21
+    </p>
+
+  </footer>
 
 </main>
