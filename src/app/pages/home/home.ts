@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { Skill } from '../../models/skill.model';
 import { Navbar } from '../../components/navbar/navbar';
+import { Hero } from '../../components/hero/hero';
 
 @Component({
   selector: 'app-home',
-  imports: [Navbar],
+  imports: [Navbar, Hero],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })
