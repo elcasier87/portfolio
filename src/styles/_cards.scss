@@ -1,0 +1,18 @@
+/* ==========================================================
+   Cards
+========================================================== */
+
+.card {
+  padding: 2rem;
+
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+
+  transition: var(--transition-default);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: var(--color-primary);
+}

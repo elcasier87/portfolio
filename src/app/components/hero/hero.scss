@@ -3,7 +3,7 @@
 ========================================================== */
 
 .hero {
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - var(--navbar-height));
 
   display: flex;
   flex-direction: column;
@@ -17,15 +17,18 @@
 ========================================================== */
 
 .hero-intro {
-  color: #3b82f6;
-  font-weight: 600;
+  color: var(--color-primary);
+
   font-size: 1rem;
+  font-weight: 600;
   letter-spacing: .08rem;
   text-transform: uppercase;
 }
 
 .hero-title {
   margin-top: 1rem;
+
+  color: var(--color-text);
 
   font-size: clamp(4rem, 9vw, 6rem);
   font-weight: 800;
@@ -35,7 +38,8 @@
 .hero-subtitle {
   margin-top: 1.5rem;
 
-  color: #94a3b8;
+  color: var(--color-text-muted);
+
   font-size: clamp(1.8rem, 4vw, 2.4rem);
   font-weight: 400;
 }
@@ -43,7 +47,8 @@
 .hero-tech {
   margin-top: .75rem;
 
-  color: #3b82f6;
+  color: var(--color-primary);
+
   font-size: 1.2rem;
   font-weight: 500;
 }
@@ -53,7 +58,8 @@
 
   margin-top: 2.5rem;
 
-  color: #cbd5e1;
+  color: var(--color-text-secondary);
+
   font-size: 1.15rem;
   line-height: 1.9;
 }
@@ -67,48 +73,4 @@
   gap: 1rem;
 
   margin-top: 2.5rem;
-}
-
-.primary-button {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-
-  padding: 1rem 2rem;
-
-  background: #3b82f6;
-  color: white;
-
-  border-radius: 12px;
-
-  text-decoration: none;
-  font-weight: 600;
-
-  transition: .3s;
-}
-
-.primary-button:hover {
-  background: #2563eb;
-  transform: translateY(-3px);
-}
-
-.secondary-button {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-
-  padding: 1rem 2rem;
-
-  border: 1px solid #334155;
-  border-radius: 12px;
-
-  color: white;
-  text-decoration: none;
-
-  transition: .3s;
-}
-
-.secondary-button:hover {
-  border-color: #3b82f6;
-  transform: translateY(-3px);
 }

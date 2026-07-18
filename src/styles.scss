@@ -1,20 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+/* ==========================================================
+   Design System
+========================================================== */
+
+@use 'styles/variables';
+@use 'styles/buttons';
+@use 'styles/cards';
+@use 'styles/typography';
+
+
+/* ==========================================================
+   Reset
+========================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    scroll-behavior:smooth;
+
+/* ==========================================================
+   Global
+========================================================== */
+
+html {
+  scroll-behavior: smooth;
 }
 
-body{
+body {
+  background: var(--color-background);
+  color: var(--color-text);
 
-    background:#0f172a;
-
-    color:#f8fafc;
-
-    font-family:Inter,sans-serif;
-
+  font-family: Inter, sans-serif;
 }
