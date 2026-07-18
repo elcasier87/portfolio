@@ -8,45 +8,7 @@
 
   <app-about></app-about>
 
-  <section id="skills">
-
-    <p class="section-title">
-      TECNOLOGÍAS
-    </p>
-
-    <h2 class="skills-title">
-      Las herramientas con las que trabajo
-    </h2>
-
-    <p class="skills-subtitle">
-      Tecnologías que utilizo para desarrollar aplicaciones backend y frontend modernas.
-    </p>
-
-    <div class="skills-grid">
-
-      @for (skill of skills; track skill.title) {
-
-        <article class="skill-card">
-
-          <div class="skill-icon">
-            {{ skill.icon }}
-          </div>
-
-          <h3 class="skill-title">
-            {{ skill.title }}
-          </h3>
-
-          <p class="skill-description">
-            {{ skill.description }}
-          </p>
-
-        </article>
-
-      }
-
-    </div>
-
-  </section>
+  <app-skills></app-skills>
 
   <section id="contact">
 
