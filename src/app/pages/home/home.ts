@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { Skill } from '../../models/skill.model';
 import { Navbar } from '../../components/navbar/navbar';
 import { Hero } from '../../components/hero/hero';
+import { FeaturedProject } from '../../components/featured-project/featured-project';
 
 @Component({
   selector: 'app-home',
-  imports: [Navbar, Hero],
+  imports: [Navbar, Hero, FeaturedProject],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })

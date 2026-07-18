@@ -1,0 +1,105 @@
+/* ==========================================================
+   Featured Project
+========================================================== */
+
+.project-section-title {
+  margin-top: 1rem;
+
+  color: #3b82f6;
+
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.project-section-subtitle {
+  max-width: 700px;
+
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
+
+  color: #94a3b8;
+  line-height: 1.8;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+
+  align-items: center;
+
+  margin-top: 4rem;
+}
+
+.project-image {
+  height: 420px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 20px;
+}
+
+.project-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1.5rem;
+
+  text-align: center;
+}
+
+.project-placeholder-icon {
+  font-size: 3.5rem;
+  opacity: .6;
+}
+
+.project-placeholder-text {
+  color: #94a3b8;
+  font-size: 1rem;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  margin: 2rem 0;
+}
+
+.tech-item {
+  padding: .6rem 1rem;
+
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 999px;
+}
+
+.project-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem 2rem;
+
+  background: #3b82f6;
+  color: white;
+
+  border-radius: 12px;
+
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: .3s;
+}
+
+.project-button:hover {
+  background: #2563eb;
+  transform: translateY(-3px);
+}
