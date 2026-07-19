@@ -1,76 +1,71 @@
-/* ==========================================================
-   Hero
-========================================================== */
-
 .hero {
-  min-height: calc(100vh - var(--navbar-height));
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  padding: 4rem 0;
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - var(--navbar-height));
+    padding: 4rem 2rem;
 }
 
-/* ==========================================================
-   Hero Content
-========================================================== */
+.hero-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    gap: 5rem;
+    align-items: center;
+}
 
 .hero-intro {
-  color: var(--color-primary);
-
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: .08rem;
-  text-transform: uppercase;
+    margin-bottom: .75rem;
+    font-size: 1.1rem;
+    color: var(--color-text-secondary);
 }
 
 .hero-title {
-  margin-top: 1rem;
-
-  color: var(--color-text);
-
-  font-size: clamp(4rem, 9vw, 6rem);
-  font-weight: 800;
-  line-height: 1;
-}
-
-.hero-subtitle {
-  margin-top: 1.5rem;
-
-  color: var(--color-text-muted);
-
-  font-size: clamp(1.8rem, 4vw, 2.4rem);
-  font-weight: 400;
-}
-
-.hero-tech {
-  margin-top: .75rem;
-
-  color: var(--color-primary);
-
-  font-size: 1.2rem;
-  font-weight: 500;
+    margin: 0;
+    font-size: clamp(3.5rem, 8vw, 5.5rem);
+    font-weight: 800;
+    line-height: 1.05;
 }
 
 .hero-description {
-  max-width: 550px;
-
-  margin-top: 2.5rem;
-
-  color: var(--color-text-secondary);
-
-  font-size: 1.15rem;
-  line-height: 1.9;
+    max-width: 650px;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--color-text-secondary);
 }
 
-/* ==========================================================
-   Buttons
-========================================================== */
-
 .hero-buttons {
-  display: flex;
-  gap: 1rem;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
 
-  margin-top: 2.5rem;
+.hero-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+}
+
+.hero-stack span {
+    padding: .55rem 1rem;
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 999px;
+    font-size: .9rem;
+    color: var(--color-text-secondary);
+    transition: .25s;
+}
+
+.hero-stack span:hover {
+    transform: translateY(-2px);
+    border-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

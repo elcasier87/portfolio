@@ -1,19 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-hero',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './hero.html',
   styleUrl: './hero.scss',
 })
-
-export class Hero {
-
-  readonly name = 'Casimiro Aroca';
-
-  readonly role = 'Java Backend Developer';
-
-  readonly technologies = 'Spring Boot • Angular • Claude';
-
-}
-
+export class Hero {}
