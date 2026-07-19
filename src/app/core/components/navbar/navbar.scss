@@ -65,3 +65,11 @@
 .navbar-link:hover {
   color: var(--color-text);
 }
+
+.navbar-link.active {
+    color: var(--color-primary);
+}
+
+.navbar-link.active::after {
+    width: 100%;
+}

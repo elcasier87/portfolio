@@ -3,7 +3,7 @@
   <nav class="navbar-container">
 
     <a
-      href="#hero"
+      routerLink="/"
       class="navbar-logo"
       aria-label="Ir al inicio">
 
@@ -17,25 +17,47 @@
     <ul class="navbar-links">
 
       <li class="navbar-item">
-        <a class="navbar-link" href="#hero">
+        <a
+          class="navbar-link"
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }">
           Inicio
         </a>
       </li>
 
       <li class="navbar-item">
-        <a class="navbar-link" href="#featured-project">
-          Proyecto
+        <a
+          class="navbar-link"
+          routerLink="/projects"
+          routerLinkActive="active">
+          Proyectos
         </a>
       </li>
 
       <li class="navbar-item">
-        <a class="navbar-link" href="#about">
+        <a
+          class="navbar-link"
+          routerLink="/about"
+          routerLinkActive="active">
           Sobre mí
         </a>
       </li>
 
       <li class="navbar-item">
-        <a class="navbar-link" href="#contact">
+        <a
+          class="navbar-link"
+          routerLink="/blog"
+          routerLinkActive="active">
+          Blog
+        </a>
+      </li>
+
+      <li class="navbar-item">
+        <a
+          class="navbar-link"
+          routerLink="/contact"
+          routerLinkActive="active">
           Contacto
         </a>
       </li>
