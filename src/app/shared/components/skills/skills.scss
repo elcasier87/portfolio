@@ -1,6 +1,13 @@
 /* ==========================================================
    Skills
 ========================================================== */
+:host {
+    display: block;
+}
+
+section {
+    padding: 2rem 0;
+}
 
 .skills-grid {
     display: grid;
@@ -9,6 +16,11 @@
 }
 
 .skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
     height: 100%;
     transition: transform .25s ease, border-color .25s ease;
 }
@@ -20,19 +32,29 @@
 
 .skill-icon {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 
-    width: 60px;
-    height: 60px;
+    width: 64px;
+    height: 64px;
 
-    margin-bottom: 1.5rem;
+    margin: 0 auto 1.5rem;
 
-    font-size: 2rem;
+    border-radius: 16px;
 
-    border-radius: var(--radius-small);
+    background: rgba(59, 130, 246, .08);
+    border: 1px solid rgba(59, 130, 246, .15);
+}
 
-    background: rgba(59, 130, 246, .12);
+.skill-icon img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    transition: transform .25s ease;
+}
+
+.skill-card:hover .skill-icon img {
+    transform: scale(1.08);
 }
 
 .skill-title {
