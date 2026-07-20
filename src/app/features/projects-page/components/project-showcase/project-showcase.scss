@@ -1,0 +1,341 @@
+:host {
+
+    display: block;
+
+}
+
+.showcase {
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+
+}
+
+.showcase-info {
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    padding-bottom: 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    border-bottom: 1px solid rgba(255,255,255,.05);
+
+}
+
+.showcase-header {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+
+    margin-bottom: 1rem;
+
+}
+
+.showcase-header h2 {
+
+    font-size: 3rem;
+    margin: 0;
+
+}
+
+.status {
+
+    padding: .45rem .9rem;
+
+    border-radius: 999px;
+
+    background: #2563eb20;
+
+    color: #60a5fa;
+
+    font-size: .85rem;
+
+    font-weight: 600;
+
+}
+
+.description {
+
+    font-size: 1.15rem;
+
+    line-height: 1.7;
+
+    color: var(--color-text-secondary);
+
+    margin-bottom: 2rem;
+
+}
+
+.tech {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: .8rem;
+
+    margin-bottom: 2rem;
+
+}
+
+.tech span {
+
+    padding: .65rem 1rem;
+
+    border: 1px solid var(--color-border);
+
+    border-radius: 999px;
+
+    background: var(--color-surface);
+
+}
+
+.buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 1rem;
+
+}
+
+.showcase-demo {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 430px 650px;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 1.5rem;
+
+    padding-top: .5rem;
+
+}
+
+.phone {
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+.phone img {
+
+    width: 460px;
+
+    transition: .3s;
+
+    filter: drop-shadow(0 35px 70px rgba(37,99,235,.25));
+
+}
+
+.cards {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1.25rem;
+
+}
+
+.card {
+
+    position: relative;
+
+    width: 650px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 1.5rem;
+
+    padding: 2.2rem;
+
+    border-radius: 24px;
+
+    border: 1px solid var(--color-border);
+
+    background: transparent;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+}
+
+.card:hover {
+
+    transform: translateY(-3px);
+
+    border-color: #3b82f6;
+
+}
+
+.card.active {
+
+    border-color: #3b82f6;
+
+    background: rgba(59,130,246,.08);
+
+    box-shadow:
+        0 0 0 1px rgba(59,130,246,.15),
+        0 12px 30px rgba(37,99,235,.12);
+
+    transform: translateY(-2px);
+
+}
+
+.card-content {
+
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+
+}
+
+.number {
+
+    width: 68px;
+    height: 68px;
+
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255,255,255,.04);
+
+    color: #60a5fa;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    flex-shrink: 0;
+
+    transition: .25s;
+
+}
+
+.card.active .number {
+
+    background: #2563eb;
+
+    color: white;
+
+    transform: scale(1.08);
+
+}
+
+.card h3 {
+
+    color: var(--color-text);
+
+    transition: .25s;
+
+}
+
+.card.active h3 {
+
+    background: linear-gradient(
+        90deg,
+        #60a5fa,
+        #3b82f6
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card p {
+
+    margin: 0;
+
+    line-height: 1.6;
+
+    color: var(--color-text-secondary);
+
+    text-align: center;
+
+}
+
+@media (max-width: 1100px) {
+
+    .showcase-demo {
+
+        grid-template-columns: 1fr;
+
+        gap: 3rem;
+
+    }
+
+    .phone {
+
+        order: -1;
+
+    }
+
+}
+
+.featured-project {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-bottom: .5rem;
+
+}
+
+.featured-label{
+
+    padding:.55rem 1rem;
+
+    border-radius:999px;
+
+    background:rgba(59,130,246,.08);
+
+    border:1px solid rgba(59,130,246,.25);
+
+    color:#60a5fa;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+
+}

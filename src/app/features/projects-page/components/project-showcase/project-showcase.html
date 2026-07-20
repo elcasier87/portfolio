@@ -1,0 +1,94 @@
+<section class="showcase">
+
+      <div class="featured-project">
+
+          <span class="featured-label">
+              Proyecto destacado
+          </span>
+
+      </div>
+
+      <div class="showcase-info">
+
+        <div class="showcase-header">
+
+            <h2>WaxWiser</h2>
+
+            <span class="status">
+                En desarrollo
+            </span>
+
+        </div>
+
+        <p class="description">
+
+            Plataforma impulsada por IA para identificar y valorar vinilos de colección mediante una fotografía.
+
+        </p>
+
+        <div class="tech">
+
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>Angular</span>
+            <span>Claude AI</span>
+            <span>MySQL</span>
+
+        </div>
+
+        <div class="buttons">
+
+            <a class="button button--primary">
+                GitHub
+            </a>
+
+            <a class="button button--secondary">
+                Próximamente
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="showcase-demo">
+
+        <div class="phone">
+
+            <img
+                [src]="'assets/images/projects/waxwiser/' + features[selected].image"
+                [alt]="features[selected].title">
+
+        </div>
+
+        <div class="cards">
+
+            @for (feature of features; track feature.image; let i = $index) {
+
+                <button
+                    class="card"
+                    [class.active]="i === selected"
+                    (click)="select(i)">
+
+                    <div class="number">
+
+                        {{ (i + 1).toString().padStart(2,'0') }}
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>{{ feature.title }}</h3>
+
+                        <p>{{ feature.description }}</p>
+
+                    </div>
+
+                </button>
+
+            }
+
+        </div>
+
+    </div>
+
+</section>
