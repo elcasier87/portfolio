@@ -1,12 +1,25 @@
 import { Component } from '@angular/core';
 
-import { About } from '../../shared/components/about/about';
-import { Skills } from '../../shared/components/skills/skills';
+import { AboutHeroComponent } from './components/about-hero/about-hero';
+import { AboutHistoryComponent } from './components/about-history/about-history';
+import { AboutTechnologiesComponent } from './components/about-technologies/about-technologies';
+import { AboutWorkStyleComponent } from './components/about-work-style/about-work-style';
+import { AboutHobbiesComponent } from './components/about-hobbies/about-hobbies';
+import { AboutQuoteComponent } from './components/about-quote/about-quote';
 
 @Component({
   selector: 'app-about-page',
-  imports: [About, Skills],
+  imports: [
+    AboutHeroComponent,
+    AboutHistoryComponent,
+    AboutTechnologiesComponent,
+    AboutWorkStyleComponent,
+    AboutHobbiesComponent,
+    AboutQuoteComponent
+  ],
   templateUrl: './about-page.html',
-  styleUrl: './about-page.scss',
+  styleUrl: './about-page.scss'
 })
-export class AboutPage {}
+export class AboutPageComponent {
+
+}

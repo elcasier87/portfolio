@@ -7,7 +7,7 @@ import { Icon } from '../icon/icon';
   templateUrl: './skills.html',
   styleUrl: './skills.scss',
 })
-export class Skills {
+export class SkillsComponent {
   skills = [
 
   {

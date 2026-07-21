@@ -7,4 +7,4 @@ import { RouterLink } from '@angular/router';
   templateUrl: './call-to-action.html',
   styleUrl: './call-to-action.scss'
 })
-export class CallToAction {}
+export class CallToActionComponent {}

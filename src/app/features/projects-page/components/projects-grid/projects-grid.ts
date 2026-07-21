@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './projects-grid.html',
   styleUrl: './projects-grid.scss',
 })
-export class ProjectsGrid {
+export class ProjectsGridComponent {
 
   filters = [
     'Todos',

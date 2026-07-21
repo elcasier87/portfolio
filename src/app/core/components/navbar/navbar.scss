@@ -30,13 +30,19 @@
 .navbar-logo {
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 
 .navbar-logo-image {
   display: block;
-
-  width: auto;
   height: 100px;
+  width: auto;
+
+  transition: transform .25s ease;
+}
+
+.navbar-logo:hover .navbar-logo-image {
+  transform: scale(1.05);
 }
 
 .navbar-links {

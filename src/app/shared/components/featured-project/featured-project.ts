@@ -6,4 +6,4 @@ import { Component } from '@angular/core';
   templateUrl: './featured-project.html',
   styleUrl: './featured-project.scss',
 })
-export class FeaturedProject {}
+export class FeaturedProjectComponent {}

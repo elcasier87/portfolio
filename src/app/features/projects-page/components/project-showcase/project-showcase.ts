@@ -12,7 +12,7 @@ interface Feature {
   templateUrl: './project-showcase.html',
   styleUrl: './project-showcase.scss',
 })
-export class ProjectShowcase {
+export class ProjectShowcaseComponent {
 
   selected = 0;
 

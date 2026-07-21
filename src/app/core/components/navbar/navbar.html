@@ -1,81 +1,68 @@
 <header class="navbar">
 
-  <nav class="navbar-container">
+  <div class="navbar-container">
 
-    <a
-      routerLink="/"
-      class="navbar-logo"
-      aria-label="Ir al inicio">
-
+    <a class="navbar-logo" routerLink="/">
       <img
         class="navbar-logo-image"
         src="assets/images/logo_elcasier.png"
-        alt="Logo de elcasier">
-
+        alt="elcasier">
     </a>
 
-    <ul class="navbar-links">
+    <nav>
 
-      <li class="navbar-item">
-        <a
-          class="navbar-link"
-          routerLink="/"
-          routerLinkActive="active"
-          [routerLinkActiveOptions]="{ exact: true }">
-          Inicio
-        </a>
-      </li>
+      <ul class="navbar-links">
 
-      <li class="navbar-item">
-        <a
-          class="navbar-link"
-          routerLink="/projects"
-          routerLinkActive="active">
-          Proyectos
-        </a>
-      </li>
+        <li class="navbar-item">
+          <a
+            class="navbar-link"
+            routerLink="/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }">
+            Inicio
+          </a>
+        </li>
 
-      <li class="navbar-item">
-        <a
-          class="navbar-link"
-          routerLink="/about"
-          routerLinkActive="active">
-          Sobre mí
-        </a>
-      </li>
+        <li class="navbar-item">
+          <a
+            class="navbar-link"
+            routerLink="/about"
+            routerLinkActive="active">
+            Sobre mí
+          </a>
+        </li>
 
-      <li class="navbar-item">
-        <a
-          class="navbar-link"
-          routerLink="/blog"
-          routerLinkActive="active">
-          Blog
-        </a>
-      </li>
+        <li class="navbar-item">
+          <a
+            class="navbar-link"
+            routerLink="/projects"
+            routerLinkActive="active">
+            Proyectos
+          </a>
+        </li>
 
-      <li class="navbar-item">
-        <a
-          class="navbar-link"
-          routerLink="/contact"
-          routerLinkActive="active">
-          Contacto
-        </a>
-      </li>
+        <li class="navbar-item">
+          <a
+            class="navbar-link"
+            routerLink="/blog"
+            routerLinkActive="active">
+            Blog
+          </a>
+        </li>
 
-      <li class="navbar-item">
-        <a
-          class="navbar-link"
-          href="https://github.com/elcasier87"
-          target="_blank"
-          rel="noopener noreferrer">
+        <li class="navbar-item">
+          <a
+            class="navbar-link"
+            routerLink="/contact"
+            routerLinkActive="active">
+            Contacto
+          </a>
+        </li>
 
-          GitHub
+      </ul>
 
-        </a>
-      </li>
+    </nav>
 
-    </ul>
-
-  </nav>
+  </div>
 
 </header>
