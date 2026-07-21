@@ -4,16 +4,20 @@
 
 .about-history {
 
-    width: min(1200px, 92%);
+    width: min(1350px, 92%);
 
     margin: 4rem auto 0;
     padding: 2.5rem;
 
-    border: 1px solid rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.05);
     border-radius: 24px;
 
     background: rgba(255,255,255,.015);
-    backdrop-filter: blur(14px);
+    background: linear-gradient(
+    180deg,
+    #161e31 0%,
+    #131a2b 100%
+);
 
     scroll-margin-top: calc(var(--navbar-height) + 20px);
 }
@@ -21,6 +25,14 @@
 /* ==========================================================
    Header
 ========================================================== */
+
+.history-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-bottom: 1.5rem;
+}
 
 .about-history-tag {
 
@@ -65,33 +77,45 @@
 
 .history-card {
 
-    padding: 2rem;
+    padding: 2.2rem;
 
-    border: 1px solid rgba(255,255,255,.08);
-    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,.06);
+    border-radius: 22px;
 
-    background: rgba(255,255,255,.02);
+    background: linear-gradient(
+        180deg,
+        rgba(255,255,255,.02) 0%,
+        rgba(255,255,255,.01) 100%
+    );
 
-    transition: .25s;
+    transition:
+        transform .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
 }
 
 .history-card:hover {
 
-    transform: translateY(-4px);
+    transform: translateY(-6px);
 
-    border-color: rgba(var(--color-primary-rgb), .35);
-}
+    border-color: rgb(var(--color-primary-rgb));
 
-.history-card.active {
-
-    border-color: var(--color-primary);
-
-    box-shadow: 0 0 35px rgba(var(--color-primary-rgb), .18);
+    box-shadow:
+        0 0 0 1px rgba(var(--color-primary-rgb), .45),
+        0 0 25px rgba(var(--color-primary-rgb), .35),
+        0 18px 40px rgba(0,0,0,.35);
 }
 
 /* ==========================================================
    Content
 ========================================================== */
+
+.history-content {
+
+    display: flex;
+    align-items: flex-start;
+    gap: 1.4rem;
+}
 
 .history-date {
 
@@ -107,25 +131,28 @@
 
 .history-icon {
 
-    margin-bottom: 1.5rem;
+    width: 46px;
+    height: 46px;
+
+    flex-shrink: 0;
 
     color: var(--color-primary);
 
-    font-size: 2.8rem;
+    margin-top: .2rem;
 }
 
-.history-card h3 {
+.history-text h3 {
 
-    margin-bottom: 1rem;
+    margin: 0 0 .8rem;
 
-    color: var(--color-text);
-
-    font-size: 1.8rem;
+    font-size: 1.45rem;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
-.history-card p {
+.history-text p {
 
-    color: var(--color-text-secondary);
+    margin: 0;
 
     line-height: 1.7;
 }
