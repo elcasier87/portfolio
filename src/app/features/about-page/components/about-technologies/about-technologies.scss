@@ -4,43 +4,29 @@
 
 .about-technologies {
 
-    width: min(1200px, 92%);
+    width: min(1360px, 92%);
 
-    margin: 4rem auto 0;
-    text-align: center;
+    margin: 6rem auto 0;
+    padding: 3rem;
+
+    border: 1px solid rgba(255,255,255,.05);
+    border-radius: 24px;
+
+    background: rgba(255,255,255,.02);
 }
 
 .about-technologies-tag {
 
     display: inline-block;
 
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
     color: var(--color-primary);
 
     font-size: .95rem;
     font-weight: 700;
     letter-spacing: .08em;
-}
-
-.about-technologies-title {
-
-    margin-bottom: 1rem;
-
-    color: var(--color-text);
-
-    font-size: clamp(2rem, 4vw, 3rem);
-}
-
-.about-technologies-description {
-
-    max-width: 700px;
-
-    margin: 0 auto 3rem;
-
-    color: var(--color-text-secondary);
-
-    line-height: 1.8;
+    text-transform: uppercase;
 }
 
 /* ==========================================================
@@ -50,9 +36,9 @@
 .technologies-grid {
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(8, 1fr);
 
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 /* ==========================================================
@@ -61,55 +47,96 @@
 
 .technology-card {
 
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: .9rem;
+
+    padding: 1.6rem 1rem;
 
     border: 1px solid rgba(255,255,255,.08);
-    border-radius: 20px;
+    border-radius: 14px;
 
     background: rgba(255,255,255,.02);
 
-    transition: .25s;
+    transition: all .25s ease;
 }
 
 .technology-card:hover {
 
-    transform: translateY(-6px);
+    transform: translateY(-4px);
 
     border-color: rgba(var(--color-primary-rgb), .35);
 
-    box-shadow: 0 0 25px rgba(var(--color-primary-rgb), .15);
+    box-shadow: 0 0 20px rgba(var(--color-primary-rgb), .15);
 }
 
 .technology-icon {
 
-    margin-bottom: 1rem;
+    width: 56px;
+    height: 56px;
 
-    color: var(--color-primary);
-
-    font-size: 2.8rem;
+     flex-shrink: 0;
 }
 
-.technology-card h3 {
+.technology-card:nth-child(1) .technology-icon {
+    color: #F89820;   // Java
+}
 
-    margin-bottom: .5rem;
+.technology-card:nth-child(2) .technology-icon {
+    color: #6DB33F;   // Spring
+}
 
-    color: var(--color-text);
+.technology-card:nth-child(3) .technology-icon {
+    color: #DD0031;   // Angular
+}
 
-    font-size: 1.35rem;
+.technology-card:nth-child(4) .technology-icon {
+    color: #3178C6;   // TypeScript
+}
+
+.technology-card:nth-child(5) .technology-icon {
+    color: #4479A1;   // MySQL
+}
+
+.technology-card:nth-child(6) .technology-icon {
+    color: #F05032;   // Git
+}
+
+.technology-card:nth-child(7) .technology-icon {
+    color: #2496ED;   // Docker
+}
+
+.technology-card:nth-child(8) .technology-icon {
+    color: #D97706;   // Claude AI
 }
 
 .technology-card span {
 
-    color: var(--color-text-secondary);
+    color: var(--color-text);
 
     font-size: .95rem;
+    font-weight: 500;
+
+    text-align: center;
 }
 
 /* ==========================================================
    Responsive
 ========================================================== */
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
+
+    .technologies-grid {
+
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+@media (max-width: 700px) {
 
     .technologies-grid {
 
@@ -118,7 +145,7 @@
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
 
     .technologies-grid {
 
