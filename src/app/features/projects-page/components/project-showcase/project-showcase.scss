@@ -4,16 +4,23 @@
 
 }
 
-.showcase {
+.showcase{
 
-    max-width: 1200px;
+    display:grid;
 
-    margin: 0 auto;
+    grid-template-columns: 420px 1fr;
 
-    display: flex;
-    flex-direction: column;
+    gap:5rem;
 
-    gap: 2rem;
+    align-items:center;
+
+}
+
+.showcase-left{
+
+    padding-right:5rem;
+
+    border-right:1px solid rgba(255,255,255,.05);
 
 }
 
@@ -23,15 +30,11 @@
 
     margin: 0 auto;
 
-    padding-bottom: 2.5rem;
-
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 
-    text-align: center;
-
-    border-bottom: 1px solid rgba(255,255,255,.05);
+    text-align: left;
 
 }
 
@@ -40,7 +43,7 @@
     display: flex;
 
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
     gap: 1rem;
 
@@ -88,7 +91,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    justify-content: center;
+    justify-content: flex-start;
 
     gap: .8rem;
 
@@ -112,7 +115,7 @@
 
     display: flex;
 
-    justify-content: center;
+    justify-content: flex-start;
 
     gap: 1rem;
 
@@ -124,7 +127,7 @@
 
     display: grid;
 
-    grid-template-columns: 430px 650px;
+    grid-template-columns: 380px 1fr;;
 
     justify-content: center;
 
@@ -132,7 +135,7 @@
 
     gap: 1.5rem;
 
-    padding-top: .5rem;
+    padding-top: 0;
 
 }
 
@@ -146,7 +149,7 @@
 
 .phone img {
 
-    width: 460px;
+    width: 280px;
 
     transition: .3s;
 
@@ -168,7 +171,7 @@
 
     position: relative;
 
-    width: 650px;
+    width: 520px;
 
     display: flex;
 
@@ -176,7 +179,7 @@
 
     gap: 1.5rem;
 
-    padding: 2.2rem;
+    padding: 1rem;
 
     border-radius: 24px;
 

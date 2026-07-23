@@ -5,7 +5,6 @@ import { MainLayoutComponent } from './core/layouts/main-layout/main-layout';
 import { HomeComponent } from './features/home/home';
 import { AboutPageComponent } from './features/about-page/about-page';
 import { ProjectsPageComponent } from './features/projects-page/projects-page';
-import { BlogPageComponent } from './features/blog-page/blog-page';
 import { ContactPageComponent } from './features/contact-page/contact-page';
 import { NotFoundPageComponent } from './features/not-found-page/not-found-page';
 
@@ -28,11 +27,6 @@ export const routes: Routes = [
         path: 'projects',
         component: ProjectsPageComponent,
         title: 'Proyectos'
-      },
-      {
-        path: 'blog',
-        component: BlogPageComponent,
-        title: 'Blog'
       },
       {
         path: 'contact',

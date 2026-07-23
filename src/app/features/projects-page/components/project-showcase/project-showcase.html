@@ -1,91 +1,99 @@
 <section class="showcase">
 
-      <div class="featured-project">
+    <div class="showcase-left">
 
-          <span class="featured-label">
-              Proyecto destacado
-          </span>
+        <div class="featured-project">
 
-      </div>
-
-      <div class="showcase-info">
-
-        <div class="showcase-header">
-
-            <h2>WaxWiser</h2>
-
-            <span class="status">
-                En desarrollo
+            <span class="featured-label">
+                Proyecto destacado
             </span>
 
         </div>
 
-        <p class="description">
+        <div class="showcase-info">
 
-            Plataforma impulsada por IA para identificar y valorar vinilos de colección mediante una fotografía.
+            <div class="showcase-header">
 
-        </p>
+                <h2>WaxWiser</h2>
 
-        <div class="tech">
+                <span class="status">
+                    En desarrollo
+                </span>
 
-            <span>Java</span>
-            <span>Spring Boot</span>
-            <span>Angular</span>
-            <span>Claude AI</span>
-            <span>MySQL</span>
+            </div>
 
-        </div>
+            <p class="description">
 
-        <div class="buttons">
+                Plataforma impulsada por IA para identificar y valorar vinilos de colección mediante una fotografía.
 
-            <a class="button button--primary">
-                GitHub
-            </a>
+            </p>
 
-            <a class="button button--secondary">
-                Próximamente
-            </a>
+            <div class="tech">
+
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>Angular</span>
+                <span>Claude AI</span>
+                <span>MySQL</span>
+
+            </div>
+
+            <div class="buttons">
+
+                <a class="button button--primary">
+                    GitHub
+                </a>
+
+                <a class="button button--secondary">
+                    Próximamente
+                </a>
+
+            </div>
 
         </div>
 
     </div>
 
-    <div class="showcase-demo">
+    <div class="showcase-right">
 
-        <div class="phone">
+        <div class="showcase-demo">
 
-            <img
-                [src]="'assets/images/projects/waxwiser/' + features[selected].image"
-                [alt]="features[selected].title">
+            <div class="phone">
 
-        </div>
+                <img
+                    [src]="'assets/images/projects/waxwiser/' + features[selected].image"
+                    [alt]="features[selected].title">
 
-        <div class="cards">
+            </div>
 
-            @for (feature of features; track feature.image; let i = $index) {
+            <div class="cards">
 
-                <button
-                    class="card"
-                    [class.active]="i === selected"
-                    (click)="select(i)">
+                @for (feature of features; track feature.image; let i = $index) {
 
-                    <div class="number">
+                    <button
+                        class="card"
+                        [class.active]="i === selected"
+                        (click)="select(i)">
 
-                        {{ (i + 1).toString().padStart(2,'0') }}
+                        <div class="number">
 
-                    </div>
+                            {{ (i + 1).toString().padStart(2,'0') }}
 
-                    <div class="card-content">
+                        </div>
 
-                        <h3>{{ feature.title }}</h3>
+                        <div class="card-content">
 
-                        <p>{{ feature.description }}</p>
+                            <h3>{{ feature.title }}</h3>
 
-                    </div>
+                            <p>{{ feature.description }}</p>
 
-                </button>
+                        </div>
 
-            }
+                    </button>
+
+                }
+
+            </div>
 
         </div>
 
