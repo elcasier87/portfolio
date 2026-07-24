@@ -70,3 +70,47 @@ section {
     color: var(--color-text-secondary);
     line-height: 1.8;
 }
+
+@media (max-width: 576px) {
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .skills-grid {
+        gap: .75rem;
+    }
+
+    .skill-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .skill-icon {
+        width: 56px;
+        height: 56px;
+        margin-bottom: .8rem;
+    }
+
+    .skill-icon img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .skill-title {
+        margin-bottom: 0;
+        font-size: 1.15rem;
+    }
+
+    .skill-description {
+        display: none;
+    }
+
+}
+
+
+
