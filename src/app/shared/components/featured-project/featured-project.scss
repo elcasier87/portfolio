@@ -68,3 +68,21 @@ section {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-pill);
 }
+
+@media (max-width: 768px) {
+
+    .project {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    .project-info {
+        text-align: center;
+    }
+
+    .tech-list {
+        justify-content: center;
+    }
+
+}
