@@ -2,10 +2,23 @@
     display: block;
 }
 
-.contact-hero {
+.contact-page {
     width: min(1360px, 92%);
     margin: 0 auto;
-    padding: 8rem 0 5rem;
+
+    min-height: calc(100vh - var(--navbar-height));
+
+    padding-top: calc(var(--navbar-height) + 2rem);
+    padding-bottom: 2rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-hero {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 2.5rem;
     text-align: center;
 }
 
@@ -25,25 +38,24 @@
 .hero-title {
     font-size: clamp(3rem, 6vw, 5rem);
     line-height: 1.05;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1em;
 }
 
 .hero-subtitle {
     max-width: 720px;
     margin: 0 auto;
     color: var(--color-text-secondary);
-    font-size: 1.15rem;
-    line-height: 1.8;
+    font-size: 1.05rem;
+    line-height: 1.6;
 }
 
 .contact-content {
-    width: min(1360px, 92%);
-    margin: 0 auto 8rem;
+    width: 100%;
+    margin: 0;
 
     display: grid;
     grid-template-columns: 420px 1fr;
-    gap: 5rem;
-    align-items: start;
+    gap: 3.5rem;
 }
 
 .contact-info {
@@ -57,19 +69,19 @@
 .contact-description {
     color: var(--color-text-secondary);
     line-height: 1.8;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.8rem;
 }
 
 .contact-items {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: .75rem;
 }
 
 .contact-item {
     display: flex;
     align-items: center;
-    gap: 1.2rem;
+    gap: 1rem;
 
     padding: 1.3rem;
 
@@ -89,8 +101,8 @@
 }
 
 .contact-icon {
-    width: 54px;
-    height: 54px;
+    width: 48px;
+    height: 48px;
 
     border-radius: 14px;
 
@@ -126,19 +138,19 @@
     background: rgba(255,255,255,.03);
     border: 1px solid rgba(255,255,255,.08);
     border-radius: 28px;
-    padding: 2.5rem;
+    padding: 2rem;
 }
 
 .form-header {
     display: flex;
     align-items: center;
     gap: 1.2rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .form-icon {
-    width: 62px;
-    height: 62px;
+    width: 54px;
+    height: 54px;
 
     display: flex;
     align-items: center;
@@ -151,8 +163,8 @@
 }
 
 .form-icon svg {
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
 }
 
 .form-header h2 {
@@ -166,13 +178,13 @@
 form {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.2rem;
 }
 
 .form-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+    gap: 1.2rem;
 }
 
 .form-group {
@@ -191,7 +203,7 @@ form {
 .form-group textarea {
     width: 100%;
 
-    padding: 1rem 1.15rem;
+    padding: .85rem 1rem;
 
     border-radius: 16px;
     border: 1px solid rgba(255,255,255,.08);
@@ -211,7 +223,7 @@ form {
 
 .form-group textarea {
     resize: vertical;
-    min-height: 190px;
+    min-height: 140px;
 }
 
 .form-group input::placeholder,
@@ -237,7 +249,7 @@ form {
     align-items: center;
     justify-content: center;
 
-    padding: 1rem 1.8rem;
+    padding: .9rem 1.6rem;
 
     border: none;
     border-radius: 16px;
