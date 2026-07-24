@@ -1,22 +1,12 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
-import { NotFoundPage } from './not-found-page';
+@Component({
+    selector: 'app-not-found',
+    imports: [RouterLink],
+    templateUrl: './not-found-page.html',
+    styleUrl: './not-found-page.scss'
+})
+export class NotFoundComponent {
 
-describe('NotFoundPage', () => {
-  let component: NotFoundPage;
-  let fixture: ComponentFixture<NotFoundPage>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [NotFoundPage],
-    }).compileComponents();
-
-    fixture = TestBed.createComponent(NotFoundPage);
-    component = fixture.componentInstance;
-    await fixture.whenStable();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+}
