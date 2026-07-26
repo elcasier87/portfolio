@@ -4,8 +4,12 @@
     display: flex;
     align-items: center;
 
-    min-height: calc(100vh - var(--navbar-height));
-    padding: 4rem 2rem;
+    min-height: 100vh;
+
+    padding:
+        calc(var(--navbar-height) + 4rem)
+        2rem
+        4rem;
 
     overflow: hidden;
 
@@ -157,18 +161,22 @@
 @media (max-width: 900px) {
 
     .hero {
-        padding: 3rem 1.5rem;
+
+        min-height: 100vh;
+
+        padding:
+            calc(var(--navbar-height) + 2rem)
+            1.5rem
+            3rem;
     }
 
     .hero-content {
         gap: 3rem;
-
         text-align: center;
     }
 
     .hero-description {
-        margin-left: auto;
-        margin-right: auto;
+        margin-inline: auto;
     }
 
     .hero-buttons {
