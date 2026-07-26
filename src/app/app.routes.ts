@@ -16,28 +16,28 @@ export const routes: Routes = [
       {
         path: '',
         component: HomeComponent,
-        title: 'Inicio'
+        title: 'elcasier | Portfolio'
       },
       {
         path: 'about',
         component: AboutPageComponent,
-        title: 'Sobre mí'
+        title: 'elcasier | Sobre mí'
       },
       {
         path: 'projects',
         component: ProjectsPageComponent,
-        title: 'Proyectos'
+        title: 'elcasier | Proyectos'
       },
       {
         path: 'contact',
         component: ContactPageComponent,
-        title: 'Contacto'
+        title: 'elcasier | Contacto'
       }
     ]
   },
   {
     path: '**',
     component: NotFoundPageComponent,
-    title: '404'
+    title: 'elcasier | Página no encontrada'
   }
 ];
