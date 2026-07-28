@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UmamiService } from '../../../../core/services/umami.service';
 
 interface Feature {
   title: string;
@@ -13,6 +14,8 @@ interface Feature {
   styleUrl: './project-showcase.scss',
 })
 export class ProjectShowcaseComponent {
+
+  constructor(private umami: UmamiService) {}
 
   selected = 0;
 
@@ -47,5 +50,9 @@ export class ProjectShowcaseComponent {
   select(index: number): void {
     this.selected = index;
   }
+
+  trackGithub(project: string): void {
+  this.umami.track(`${project} GitHub`);
+}
 
 }
