@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { UmamiService } from '../../../core/services/umami.service';// Ajusta la ruta si fuera distinta
 
 @Component({
   selector: 'app-hero',
@@ -7,4 +8,12 @@ import { RouterLink } from '@angular/router';
   templateUrl: './hero.html',
   styleUrl: './hero.scss',
 })
-export class HeroComponent {}
+export class HeroComponent {
+
+  private readonly umami = inject(UmamiService);
+
+  trackDownloadCV(): void {
+    this.umami.track('Download CV');
+  }
+
+}

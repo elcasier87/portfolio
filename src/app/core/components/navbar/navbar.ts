@@ -1,6 +1,7 @@
 import { Component, HostListener, inject } from '@angular/core';
 import { NavigationEnd, Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { filter } from 'rxjs';
+import { UmamiService } from '../../services/umami.service';
 
 @Component({
   selector: 'app-navbar',
@@ -11,6 +12,7 @@ import { filter } from 'rxjs';
 export class NavbarComponent {
 
   private readonly router = inject(Router);
+  private readonly umami = inject(UmamiService);
 
   isMenuOpen = false;
 
@@ -30,6 +32,10 @@ export class NavbarComponent {
 
   closeMenu(): void {
     this.isMenuOpen = false;
+  }
+
+  trackNavigation(page: string): void {
+    this.umami.track(`Open ${page}`);
   }
 
   @HostListener('window:resize')
